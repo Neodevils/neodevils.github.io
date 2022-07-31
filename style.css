@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
+/* Extras */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap');
 
 body, html {
   margin: 0;
@@ -7,6 +8,16 @@ body, html {
   text-decoration: none;
 }
 
+.gradientText {
+  font-weight: 500;
+  background: linear-gradient(140deg, #D2A8FF 12.09%, #F778BA 42.58%, #FF7B72 84.96%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+/* End of Extras */
+
+/* Start of Header */
 .topNav {
   overflow: hidden;
   background-color: rgb(13, 14, 22);
@@ -17,7 +28,16 @@ body, html {
   padding: 0.5rem;
   text-align: center;
   text-transform: uppercase;
+}
 
+.neoAuthorImage {
+  float: left;
+  height: 25px;
+  border-radius: 50%;
+  align-self: center;
+  margin-right: 5px;
+  max-height: max-content;
+  max-width: max-content;
 }
 
 .topNav a {
@@ -35,7 +55,9 @@ body, html {
   background: linear-gradient(45deg, #ff6868, #ffae51);
   color: black;
 }
+/* Ends of Header */
 
+/* Start of Main */
 #neo {
   float: left;
   text-transform: lowercase;
@@ -43,6 +65,7 @@ body, html {
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
+  text-align: center;
 }
 
 .mainContent {
@@ -50,12 +73,15 @@ body, html {
   margin-left: 45px;
   padding: 16px;
   padding-top: 0;
-  padding-bottom: 0;
+  padding-bottom: 10px;
+  padding-left: 20px;
   text-decoration: none;
   color: #e2e1e1;
   font-weight: 200;
-  width: 400px;
-  padding-left: 20px;
+  border-right: #ff6868 solid 3px;
+  border-radius: 5px;
+  border-bottom: #ff6868 solid 3px;
+  min-width: 400px;
 }
 
 .mainDesigner {
@@ -71,18 +97,13 @@ body, html {
   border-radius: 25px;
 }
 
-.gradientText {
-  font-weight: 500;
-  background: linear-gradient(140deg, #D2A8FF 12.09%, #F778BA 42.58%, #FF7B72 84.96%);
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
-}
-
-#neoContent {
-  float: left;
-  font-weight: 700;
-  font-size: 1em;
+.mainImage {
+  float: right;
+  border-radius: 50%;
+  width: 190px;
+  height: 190px;
+  margin-right: 1rem;
+  border: #ff6868 groove 3px;
 }
 
 .hireMeButton {
@@ -97,6 +118,8 @@ body, html {
   opacity: 0.6;
   transition: 0.3s;
   border-radius: 25px;
+  font-weight: 600;
+  letter-spacing: 1px;
 }
 
 .myProjectsButton {
@@ -111,4 +134,74 @@ body, html {
   transition: 0.3s;
   border-radius: 25px;
   cursor: pointer;
+  font-weight: 600;
+  letter-spacing: 1px;
 }
+/* End of Main */
+
+/* Start of Article */
+.timeline {
+  margin-top: -24px;
+  margin-left: 50px;
+  padding: 10px;
+  color: #e2e1e1;
+  font-weight: 200;
+  font-size: 1.2rem;
+  transition-duration: 0.6s;
+  width: 50%;
+  position: relative;
+  max-width: 1200px;
+}
+
+.articleContentContainer {
+  font-weight: 100;
+  color: #ff9d9d;
+  margin-left: 13px;
+  margin-top: -20px;
+  font-family: 'Roboto Mono', monospace;
+  border-left: 1px solid #ffb570;
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+  max-width: 1200px;
+}
+
+.articleContentContainer::after {
+  content: '';
+  position: absolute;
+  background-color: rgb(13, 17, 23);
+  border: 4px solid #fdc194;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  top: 40px;
+  left: -9px;
+}
+
+.articleContent {
+  margin-left: -10px;
+  color: #e2e1e1;
+  font-weight: 200;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+}
+
+#articleTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000000;
+  margin-bottom: 1rem;
+  font-family: 'Poppins', sans-serif;
+  border-radius: 25px;
+  padding: 16px;
+  padding-top: 0;
+  padding-bottom: 0;
+  width: 6rem;
+}
+
+.roboto-text {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 400;
+}
+/* End of Article */
