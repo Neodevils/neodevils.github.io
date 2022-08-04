@@ -1,6 +1,11 @@
 /* Extras */
 @import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap');
 
+@viewport {
+  width: device-width ;
+  zoom: 1;
+}
+
 body, html {
   margin: 0;
   font-family: 'Poppins', sans-serif;
@@ -78,7 +83,6 @@ body, html {
   text-decoration: none;
   color: #e2e1e1;
   font-weight: 200;
-
   border-radius: 5px;
   border-bottom: #ff6868 solid 3px;
   min-width: 400px;
