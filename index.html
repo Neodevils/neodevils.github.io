@@ -2,144 +2,70 @@
 <html lang="en">
 
 <head>
-  <!-- META -->
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <!-- CSS -->
-  <link rel="stylesheet" href="style.css" type="text/css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  <!-- SCRIPT -->
+  <!-- metas -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Language" content="en-US">
+  <meta http-equiv="Content-Script-Type" content="text/javascript">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <meta http-equiv="Page-Enter" content="blendTrans(Duration=.01)" />
+  <meta http-equiv="Page-Exit" content="blendTrans(Duration=.01)" />
+
+  <!-- favicon -->
+  <link rel="icon" type="image/x-icon" href="/images/neo_favicon.png">
+
+  <!-- website header -->
+  <title>Hello, World!</title>
+
+  <!-- stylesheets -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- scripts -->
   <script src="https://kit.fontawesome.com/0eb9cf4c2e.js" crossorigin="anonymous"></script>
-  <!-- TITLE -->
-  <title>@Neodevil</title>
+  <script src="script.js" defer></script>
 </head>
 
 <body>
-  <!-- Start of Header -->
-  <header> 
-    <div class="topNav" id="myTopNav">
-      <a href="#home" id="neo"><img src="/images/neo_author.jpg" alt="" class="neoAuthorImage">  / Neodevil <i class="fa-solid fa-terminal"></i></a>
-      <a href="https://github.com/NeoAIChan?tab=repositories" target="_blank" rel="noopener noreferrer">Projects <i class="fa-solid fa-diagram-project"></i></a>
-      <a href="#about">Me <i class="fa-solid fa-infinity"></i></a>
-    </div>
+
+  <!-- header -->
+  <header>
+    <img src="/images/neo_favicon.png" alt="Neo" id="neo-author-image">
+    <span class="symbols">/</span> <span class="blue-to-red-text">Neodevil</span> <span class="symbols"><i class="fa-solid fa-terminal"></i></span>
   </header>
-  <!-- End of Header -->
 
-  <!-- Main Content -->
+  <nav class="navbar">
+    <ul class="navbar-nav">
+      <li class="logo">
+        <a href="#" class="nav-link">
+          <span class="link-text logo-text">devils</span>
+          <i class="fa-solid fa-angles-right"></i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">
+          <i class="fa-solid fa-diagram-project"></i>
+          <span class="link-text">Projects</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">
+          <i class="fa-solid fa-infinity"></i>
+          <span class="link-text">About Me</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
   <main>
-    <div class="mainContent">
-      <h1>Hi! I Am <span class="mainDesigner">designer</span>
-        <br> 
-        Neodevil.
-      </h1>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae eum, id. Molestiae cumque doloremque neque voluptas provident porro explicabo nam magnam blanditiis, adipisci fuga veritatis quae. Nihil, dolorum aperiam cupiditate.
+    </p>
 
-      <p>
-        I'm a web designer and developer. I'm currently working on a project called <a href="https://github.com/project-devils" class="gradientText" target="_blank" rel="noopener noreferrer" >Project-Devils</a>. 
-      </p>
-      
-      <button disabled class="hireMeButton">
-         Hire Me! <i class="fa fa-try" aria-hidden="true"></i>
-      </button>
-      <a href="https://github.com/NeoAIChan?tab=repositories" target="_blank" rel="noopener noreferrer">
-        <button class="myProjectsButton">
-          Projects <i class="fa fa-external-link" aria-hidden="true"></i> 
-        </button>
-      </a>
-    </div>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus quia earum aliquid consequuntur quis voluptatibus, qui optio non architecto cumque impedit esse ullam aspernatur fuga quos, magni beatae quam harum.
+    </p>
   </main>
-  <!-- End of Main -->
-
-  <!-- Start of Article-->
-
-  <article class="timeline">
-    <h1 class="gradientText">
-      <i class="fa-solid fa-timeline"></i> 
-      <u>Timeline</u>
-    </h1>
-
-    <div class="articleContentContainer">
-      <div class="articleContent">
-        <h2 class="mainDesigner" id="articleTitle">
-          <i class="fa-brands fa-discord"></i> 
-          2017
-        </h2>
-        <p>
-          I have started to use <u>Discord</u>. It was fun to learn how to use it. I have been moderator for the <b>Discord Global Emoji</b> community server for a while.
-        </p>
-      </div>
-    </div>
-
-    <div class="articleContentContainer">
-      <div class="articleContent">
-        <h2 class="mainDesigner" id="articleTitle">
-          <i class="fa-solid fa-graduation-cap"></i>
-          2018
-        </h2>
-        <p>
-          I have graduted at this year. But because of money problems, I had to drop out of school. I have started to work, and earn money.
-          <br>
-          And this year I left on Discord.
-        </p>
-      </div>
-    </div>
-    
-    <div class="articleContentContainer">
-      <div class="articleContent">
-        <h2 class="mainDesigner" id="articleTitle">
-          <i class="fa-solid fa-briefcase"></i>
-          2019
-        </h2>
-        <p>
-          Well, I was still working but I have seen a video on YouTube. I used Discord again. And after a while I have been adminstrator for a private server. And I have taken the lead of the server, and I became owner of it.
-        </p>
-      </div>
-    </div>
-
-    <div class="articleContentContainer">
-      <div class="articleContent">
-        <h2 class="mainDesigner" id="articleTitle">
-          <i class="fa-solid fa-heart"></i>
-          2020
-        </h2>
-        <p>
-          This year, I was like a psychologist. The private server, <b>Minesa</b> had a lot of members who psychologically had problems. Me and my friend <b>Saku</b> were the first to talk to them. We talked about how to solve their problems. And we did! 
-          <br>
-          <br>
-          I was so happy to be able to help them. And we all got close to each other. And we all got a lot of friends. And we all got a lot of <i class="fa-solid fa-heart-circle-plus"></i> from each other.
-        </p>
-      </div>
-    </div>
-
-    <div class="articleContentContainer">
-      <div class="articleContent">
-        <h2 class="mainDesigner" id="articleTitle">
-          <i class="fa-solid fa-ring"></i>
-          2021
-        </h2>
-        <p>
-          It's been 1 year with my beloved Micha. At first, I was helping her to recover, more independent and make her believe in herself. Althought I have done such an amazing things to towards people, I had problems with people's thoughts about our age diffirence between mine and Micha. But we were able to talk about how to solve it!
-          <br>
-          <br>
-          I have been working with making Discord Bots. I have made total of 3 Discord Bots. But no one of them get verified, eh I was okay with it!
-        </p>
-      </div>
-    </div>
-
-    <div class="articleContentContainer">
-      <div class="articleContent">
-        <h2 class="mainDesigner" id="articleTitle">
-          <i class="fa-solid fa-code-commit"></i>
-          PRESENT
-        </h2>
-        <p>
-         And, let's talk about this year. Now, I am <span class="gradientText">co-owner</span> of Minesa Community Server. And working as <span class="gradientText">documentation manager</span> on aoi.js documentation. I am also working as <span class="gradientText">developer</span> on my own organization.
-        </p>
-      </div>
-    </div>
-  </article>
-  <!-- End of Article -->
 </body>
+
 </html>
