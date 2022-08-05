@@ -10,8 +10,8 @@
 /* variables */
 :root {
   --gradient-bg: linear-gradient(45deg, #ff6868, #ffae51);
-  --bg-first: rgb(13, 17, 23);
-  --bg-second: 141418;
+  --bg-first: #0d1117;
+  --bg-second: #141418;
   --red-color: #ff7b72;
   --orange-color: #ffa657;
   --purple-color: #d2a8ff;
@@ -30,7 +30,7 @@ html {
   padding: 0;
   font-family: 'Poppins', sans-serif;
   background-color: var(--bg-first);
-  color: var(--blue-color);
+  color: var(--gray-color);
 }
 
 /* width */
@@ -62,10 +62,18 @@ body::-webkit-scrollbar-thumb:hover {
   background-clip: text;
 }
 
+.red-to-orange-text {
+  font-weight: 500;
+  background: linear-gradient(45deg, #ff6868, #ffae51);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
 /* header starts in here*/
 header {
-  background-color: rgb(13, 14, 22);
-  border-bottom: #ff6868 solid 1px;
+  background-color: var(--bg-second);
+  border-bottom: var(--red-color) solid 1px;
   letter-spacing: 1px;
   font-size: 2rem;
   font-weight: bold;
@@ -101,6 +109,7 @@ header {
   overflow: scroll;
 }
 
+/* navbar unordered list */
 .navbar-nav {
   list-style: none;
   padding: 0;
@@ -111,10 +120,12 @@ header {
   height: 100%;
 }
 
+/* navbar list items */
 .nav-item {
   width: 100%;
 }
 
+/* nav item linking */
 .nav-link {
   display: flex;
   align-items: center;
@@ -126,6 +137,7 @@ header {
   border-radius: 5px;
 }
 
+/* nav on hover */
 .nav-link:hover {
   filter: grayscale(0%) opacity(1);
   background: var(--gradient-bg);
@@ -209,8 +221,38 @@ header {
   }
 
   main {
-    margin: 0;
+    margin: 2px;
+    padding: 1rem;
+    border-bottom: 3px var(--red-color) solid;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px -6px rgba(255, 123, 114, 0.3);
   }
+
+  #line {
+    display: block;
+    position: relative;
+    border-left: var(--gray-color) solid 1px;
+    height: 200px;
+    width: 4px;
+    opacity: 0.6;
+    top: -15px;
+    left: 65px;
+    bottom: 50px;
+  }
+  /* main content for mobile */
+  .hire-me-button {
+    background-color: var(--red-color);
+    border: none;
+    color: var(--black-color);
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 16px;
+    margin: 1px 2px;
+    border-radius: 25px;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+
 }
 
 /* Large screens */
@@ -236,9 +278,14 @@ header {
   .navbar:hover .logo-text {
     left: 0px;
   }
-}
 
-main {
-  margin: 1px 20px;
-  padding: 1rem;
+  /* main content for desktop */
+  main {
+    margin: 1rem 5rem;
+    padding: 1rem;
+  }
+
+  .hire-me-button {
+    display: none !important;
+  }
 }
