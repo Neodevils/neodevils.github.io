@@ -220,14 +220,6 @@ header {
     font-size: 30px;
   }
 
-  main {
-    margin: 2px;
-    padding: 1rem;
-    border-bottom: 3px var(--red-color) solid;
-    border-radius: 15px;
-    box-shadow: 0 10px 20px -6px rgba(255, 123, 114, 0.3);
-  }
-
   /* main content for mobile */
   .hire-me-button {
     background-color: var(--red-color);
@@ -274,12 +266,31 @@ header {
   }
 
   .hire-me-button {
-    display: none;
+    position: relative;
+    bottom: 40px;
+    float: right;
+    background-color: var(--red-color);
+    border: none;
+    color: var(--black-color);
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 25px;
+    font-weight: 600;
+    letter-spacing: 1px;
   }
 }
 
-/* article starts in here */
+/* main starts in here */
+main {
+  margin: 2px;
+  padding: 1rem;
+  border-bottom: 3px var(--red-color) solid;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px -6px rgba(255, 123, 114, 0.3);
+}
 
+/* article starts in here */
 article {
   margin: 1rem 0;
   padding: 1rem;
@@ -290,7 +301,7 @@ article {
 }
 
 article h1 {
-  border-bottom: 1px solid var(--green-color);
+  border-bottom: 1.5px solid var(--green-color);
   margin: 1rem 5rem;
   font-size: 1.5rem;
   text-transform: uppercase;
@@ -303,7 +314,6 @@ article h1 {
 }
 
 /* footer starts in here */
-
 footer {
   position: absolute;
   z-index: -1;
