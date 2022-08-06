@@ -268,7 +268,7 @@ header {
   }
 
   /* main content for desktop */
-  main {
+  .texts {
     margin: 1rem 5rem;
     padding: 1rem;
   }
