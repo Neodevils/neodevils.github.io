@@ -9,7 +9,7 @@
 
 /* variables */
 :root {
-  --gradient-bg: linear-gradient(45deg, #ff6868, #ffae51);
+  --gradient: linear-gradient(45deg, #ff6868, #ffae51);
   --bg-first: #0d1117;
   --bg-second: #141418;
   --red-color: #ff7b72;
@@ -140,8 +140,8 @@ header {
 /* nav on hover */
 .nav-link:hover {
   filter: grayscale(0%) opacity(1);
-  background: var(--gradient-bg);
-  color: var(--black-color);
+  background: var(--bg-first);
+  color: var(--purple-color);
 }
 
 .link-text {
@@ -228,17 +228,6 @@ header {
     box-shadow: 0 10px 20px -6px rgba(255, 123, 114, 0.3);
   }
 
-  #line {
-    display: block;
-    position: relative;
-    border-left: var(--gray-color) solid 1px;
-    height: 200px;
-    width: 4px;
-    opacity: 0.6;
-    top: -15px;
-    left: 65px;
-    bottom: 50px;
-  }
   /* main content for mobile */
   .hire-me-button {
     background-color: var(--red-color);
@@ -252,7 +241,6 @@ header {
     font-weight: 600;
     letter-spacing: 1px;
   }
-
 }
 
 /* Large screens */
@@ -286,6 +274,66 @@ header {
   }
 
   .hire-me-button {
-    display: none !important;
+    display: none;
   }
+}
+
+/* article starts in here */
+
+article {
+  margin: 1rem 0;
+  padding: 1rem;
+  border-radius: 15px;
+  border-bottom: 3px var(--orange-color) solid;
+  box-shadow: 0 10px 20px -6px rgba(255, 123, 114, 0.3);
+  text-align: center;
+}
+
+article h1 {
+  border-bottom: 1px solid var(--green-color);
+  margin: 1rem 5rem;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.article-text {
+  text-align: left;
+  font-family: 'Roboto Mono', sans-serif;
+  font-size: 1rem;
+}
+
+/* footer starts in here */
+
+footer {
+  position: absolute;
+  z-index: -1;
+  height: 250px;
+  padding-top: 40px;
+}
+
+.socials {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 3rem 0;
+}
+
+.socials li {
+  margin: 0 20px;
+}
+
+.socials a {
+  text-decoration: none;
+  color: var(--gray-color);
+}
+
+.socials a i {
+  font-size: 1.8rem;
+  width: 20px;
+  transition: color .4s ease;
+}
+
+.socials a:hover i {
+  color: var(--red-color);
 }

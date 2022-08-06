@@ -10,12 +10,12 @@ setInterval(titleUpdate, 3000);
 
 // title updating function
 function titleUpdate() {
-  
+
   // looping the i variable
   if (i == 3) {
     i = 0;
   }
-  
+
   // updating title and increasing i variable 
   document.title = titleArray[i];
   i++;
