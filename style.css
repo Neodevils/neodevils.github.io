@@ -271,7 +271,7 @@ header {
   }
 
   /* main content for desktop */
-  .texts {
+  .article-texts {
     margin: 1rem 5rem;
     padding: 1rem;
   }
@@ -309,7 +309,6 @@ article {
   border-radius: 15px;
   border-bottom: 3px var(--orange-color) solid;
   box-shadow: 0 10px 20px -6px rgba(255, 123, 114, 0.3);
-  text-align: center;
 }
 
 article h1 {
@@ -317,12 +316,13 @@ article h1 {
   margin: 1rem 5rem;
   font-size: 1.5rem;
   text-transform: uppercase;
+  
 }
 
-.article-text {
+article p {
   text-align: left;
   font-family: 'Roboto Mono', sans-serif;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 /* footer starts in here */
@@ -358,4 +358,9 @@ footer {
 
 .socials a:hover i {
   color: var(--red-color);
+}
+
+.footer-texts {
+  align-items: center;
+  display: block;
 }
