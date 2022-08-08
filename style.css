@@ -202,8 +202,6 @@ header {
     bottom: 0;
     width: 100vw;
     height: 5rem;
-    position: fixed;
-    z-index: 2;
   }
 
   .logo {
@@ -221,10 +219,6 @@ header {
   .nav-link i {
     font-size: 30px;
   }
-  
-  .link-text {
-    display: block;
-  }
 
   /* main content for mobile */
   .hire-me-button {
@@ -238,8 +232,6 @@ header {
     border-radius: 25px;
     font-weight: 600;
     letter-spacing: 1px;
-    z-index: 1;
-    position: relative;
   }
 }
 
@@ -271,7 +263,7 @@ header {
   }
 
   /* main content for desktop */
-  .article-texts {
+  .texts {
     margin: 1rem 5rem;
     padding: 1rem;
   }
@@ -296,7 +288,6 @@ header {
 main {
   margin: 2px;
   padding: 1rem;
-  font-size: 2rem;
   border-bottom: 3px var(--red-color) solid;
   border-radius: 15px;
   box-shadow: 0 10px 20px -6px rgba(255, 123, 114, 0.3);
@@ -309,6 +300,7 @@ article {
   border-radius: 15px;
   border-bottom: 3px var(--orange-color) solid;
   box-shadow: 0 10px 20px -6px rgba(255, 123, 114, 0.3);
+  text-align: center;
 }
 
 article h1 {
@@ -316,13 +308,12 @@ article h1 {
   margin: 1rem 5rem;
   font-size: 1.5rem;
   text-transform: uppercase;
-  
 }
 
-article p {
+.article-text {
   text-align: left;
   font-family: 'Roboto Mono', sans-serif;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 /* footer starts in here */
@@ -358,9 +349,4 @@ footer {
 
 .socials a:hover i {
   color: var(--red-color);
-}
-
-.footer-texts {
-  align-items: center;
-  display: block;
 }
