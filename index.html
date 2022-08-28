@@ -2,109 +2,37 @@
 <html lang="en" data-wf-domain="neo.devil">
 
 <head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta http-equiv="Content-Language" content="en-US" />
 
-  <!-- metas -->
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="Content-Language" content="en-US">
-  <meta http-equiv="Content-Script-Type" content="text/javascript">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <meta http-equiv="Page-Enter" content="blendTrans(Duration=.01)" />
-  <meta http-equiv="Page-Exit" content="blendTrans(Duration=.01)" />
+	<link rel="icon" type="image/x-icon" href="images\mona-loading-dark.gif">
 
-  <!-- favicon -->
-  <link rel="icon" type="image/x-icon" href="/images/neo_favicon.png">
+	<title>Hello, World!</title>
 
-  <!-- website header -->
-  <title>Hello, World!</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
 
-  <!-- stylesheets -->
-  <link rel="stylesheet" href="style.css">
-
-  <!-- scripts -->
-  <script src="https://kit.fontawesome.com/0eb9cf4c2e.js" crossorigin="anonymous"></script>
-  <script src="script.js" defer></script>
+	<script src="https://kit.fontawesome.com/0eb9cf4c2e.js" crossorigin="anonymous"></script>
+	<script src="script.js" defer></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.min.js"></script>
 </head>
 
 <body>
-  <!-- header -->
-  <header>
-    <img src="/images/neo_favicon.png" alt="Neo" id="neo-author-image">
-    <span class="symbols">/</span> <span class="blue-to-red-text">Neodevil</span> <span class="symbols"><i class="fa-solid fa-terminal"></i></span>
-  </header>
+	<div class="overlay">
+	  <div class="overlay-inner">
+		<h1 class="overlay-title">
+		  Hello World, I am
+		  <span class="text-gradient">Neodevil</span>.
+		</h1>
 
-  <!-- navigation -->
-  <nav class="navbar">
-    <ul class="navbar-nav">
-      <li class="logo">
-        <a href="#home" class="nav-link">
-          <span class="link-text logo-text">devils</span>
-          <i class="fa-solid fa-angles-right"></i>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a href="https://github.com/NeoAIChan?tab=repositories" target="_blank" rel="noopener noreferrer" class="nav-link">
-          <i class="fa-solid fa-diagram-project"></i>
-          <span class="link-text">Projects</span>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a href="#about-me" class="nav-link">
-          <i class="fa-solid fa-infinity"></i>
-          <span class="link-text">About Me</span>
-        </a>
-      </li>
-    </ul>
-  </nav>
- 
-  <!-- main -->
-  <main class="texts">
-    <p style="font-weight: 700;"><i class="fa-solid fa-brush"></i>
-      I am
-      <span style="text-decoration: underline;">
-        Neo.
-      </span>
-    </p>
-
-    <h1 class="red-to-orange-text" id="main-designer" style="font-family: 'Roboto Mono', sans-serif;">
-      I build webpages and softwares.
-    </h1>
-
-    <div style="height: 150px;"></div>
-
-    <button disabled class="hire-me-button" style="opacity: 0.4;">
-      Hire Me!
-      <i class="fa fa-try" aria-hidden="true"></i>
-    </button>
-  </main>
-
-  <!-- article -->
-  <article class="texts">
-    <h1 class="h1-about-me" id="about-me">
-      about me
-    </h1>
-    <p class="article-text">
-      Hello world! I am
-      <span class="blue-to-red-text">
-        <b>Neo</b></span>.
-      <br>
-      I'm a coder and on my way to learning <u>Frontend</u>.
-      <br>
-      I'm also known as
-      <span class="blue-to-red-text">
-        <u>Neodevil</u></span>.
-    </p>
-  </article>
-
-  <footer class="texts">
-    <ul class="socials">
-      <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-      <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-      <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-      <li><a href="#"><i class="fa fa-youtube"></i></a></li>
-      <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
-    </ul>
-  </footer>
+		<p class="overlay-description">
+		  I build
+		  <strong>webpages and softwares.</strong>
+		</p>
+	  </div>
+	</div>
 </body>
 
 </html>
