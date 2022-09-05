@@ -11,7 +11,7 @@
 :root {
 	--gradient: linear-gradient(45deg, #ff6868, #ffae51);
 	--bg-first: #0d1117;
-	--bg-second: #141418;
+	--bg-second: #161b22;
 	--red-color: #ff7b72;
 	--orange-color: #ffa657;
 	--purple-color: #d2a8ff;
@@ -77,14 +77,18 @@ body::-webkit-scrollbar-thumb:hover {
 
 /* header starts in here*/
 header {
-	background-color: var(--bg-second);
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 60px;
 	border-bottom: var(--red-color) solid 1px;
 	letter-spacing: 1px;
 	font-size: 2rem;
-	padding: 0.5rem;
+	padding: 0 0 0.5rem;
 	text-align: center;
 	user-select: none;
 	font-family: 'Rock Salt', cursive;
+	backdrop-filter: blur(10px);
 }
 
 /* symbols around text */
@@ -106,8 +110,6 @@ header {
 	position: fixed;
 	background-color: var(--bg-first);
 	transition: width 600ms ease;
-	overflow: scroll;
-	overflow: hidden; /* Hide scrollbars */
 }
 
 /* navbar unordered list */
@@ -118,7 +120,6 @@ header {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-
 }
 
 /* navbar list items */
@@ -151,34 +152,28 @@ header {
 }
 
 .nav-link i {
-	width: 2rem;
+	width: 0.5rem;
 	min-width: 2rem;
 	margin: 0 1.5rem;
 }
 
-.fa-solid fa-infinity {
-	color: #ff7eee;
-}
-
-.fa-solid fa-diagram-project {
-	color: #ff7eee;
-}
-
 .fa-solid fa-infinity,
 .fa-solid fa-diagram-project {
+	color: #ff7eee;
 	transition: var(--transition-speed);
 }
 
 .logo {
 	font-weight: bold;
 	text-transform: uppercase;
-	margin-bottom: 1rem;
+	margin-bottom: 1.5rem;
 	text-align: center;
 	color: var(--gray-color);
-	background: var(--bg-second);
 	font-size: 1.5rem;
 	letter-spacing: 0.3ch;
 	width: 100%;
+	height: 4.26rem;
+	border-bottom: var(--red-color) dashed 1px;
 }
 
 .logo i {
@@ -220,6 +215,12 @@ header {
 	.nav-link i {
 		font-size: 30px;
 	}
+
+	/* main content for mobile */
+	.texts {
+		margin: 5rem 0.5rem 0rem 0.5rem;
+		padding: 1rem;
+	}
 }
 
 /* Large screens */
@@ -236,7 +237,6 @@ header {
 		top: 0;
 		width: 5rem;
 		height: 100vh;
-
 	}
 
 	.navbar:hover {
@@ -248,7 +248,7 @@ header {
 	}
 
 	.navbar:hover .logo i {
-		margin-left: 11rem;
+		margin-left: 12rem;
 	}
 
 	.navbar:hover .logo-text {
@@ -257,14 +257,14 @@ header {
 
 	/* main content for desktop */
 	.texts {
-		margin: 1rem 1rem 1rem 5rem;
+		margin: 6rem 1rem 1rem 5rem;
 		padding: 1rem;
 	}
 }
 
 /* main starts in here */
 main {
-	margin: 2px;
+	margin: 22px;
 	padding: 1rem;
 	border-bottom: 3px var(--red-color) solid;
 	border-radius: 15px;
